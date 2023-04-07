@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail Login Suite">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://mail.google.com"/>
+  
+  <listeners>
+    <listener class-name="org.testng.reporters.EmailableReporter"/>
+  </listeners>
+  
+  <test name="Gmail Login Test">
+    <classes>
+      <class name="demo\src\test\java\com\example\ca3.java"/>
+    </classes>
+  </test>
+</suite>
